@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Multilingua</title>
+		<script>
+			alert("lingua del browser:\n" + navigator.language);
+		</script>
+		<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+		<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-sanitize.min.js"></script>
+	</head>
+
+	<body data-ng-app="multilangSite" data-ng-controller="getStrings">
+
+		<h1 data-ng-bind-html="strings.title"></h1>
+		<p data-ng-bind-html="strings.textBody1"></p>
+		<p data-ng-bind-html="strings.textBody2"></p>
+
+		<script src= "js/multilangSite.js"></script>
+	</body>
+</html>
